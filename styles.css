@@ -1,37 +1,13 @@
+@font-face {
+  font-family: "ConcertOne";
+  src: url('./ConcertOne-Regular.ttf') format('truetype')
+}
+
 body{
+  font-family: "ConcertOne", serif;
   margin:0;
   padding:0;
   width: 100vw;
   height: 100vh;
-  overflow-y: hidden;
-}
-.horizontal-container{
-  padding: 8vh;
-  height: 83vh;
-  display: flex;
-  flex-wrap: wrap;
-  overflow-x: scroll;
-  min-width: 230vh;
-}
-.box-s{
-  display: block;
-  height: 40vh;
-  width: 40vh;
-  background-color: red;
-
-}
-.box-s-wrapper{
-  float:left;
-  margin-left: 4vh;
-}
-.box-l{
-  display:block;
-  float:left;
-  height: 84vh;
-  width: 40vh;
-  background-color: red;
-  margin-left: 4vh;
-}
-.box-s:nth-child(odd){
-    margin-bottom: 4vh;
+  overflow-y: hidden
 }
