@@ -4,9 +4,90 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>Sights</title>
+  <link rel="Stylesheet" href="../styles.css">
+  <link href='https://fonts.googleapis.com/css?family=Concert One' rel='stylesheet'>
+  <style>
+    body {background-color: rgb(68,178,112);
+        color:white;
+        font-family: 'Concert One';
+        }
+    #flexcontainer{
+      height: 85%;
+      width: 77.3%;
+      float: right;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    div.box {
+        background-color: white;
+        color:black;
+        border-radius: 12px;
+        display: block;
+        padding: 8px;
+        margin: 10px;
+        width: 40vh;
+        height: 40vh;
+        }
+    div#filter{
+    display: inline-block;
+    height: 85%;
+    position: absolute;
+    }
+    p {
+      margin-left: 6px;
+    }
+    a {
+      color:white;
+    }
+  </style>
 </head>
 <body>
+  <noscript>
+    <strong>Aktivera JavaScript!</strong>
+  </noscript>
+  <a href="../index.html">⬅️Go back</a>
+  <div style="margin-left: auto;">
+  <div class="box" id="filter">
+    <h2>Filter Attractions</h2>
 
+    <input type="adress" v-model="adress" class="form-conrol form-control-lg" style="border-style: solid; border:grey,1px;border-radius: 8px;">
+  </div>
+<div id="flexcontainer">
+  <div class="box" id="a1">
+    <h3></h3>
+    <div></div>
+  </div>
+  <div class="box" id="a2">
+    <h3></h3>
+    <div></div>
+  </div>
+  <div class="box" id="a3">
+    <h3></h3>
+    <div></div>
+  </div>
+  <div class="box" id="a4">
+    <h3></h3>
+    <div></div>
+  </div>
+  <div class="box" id="a5">
+    <h3></h3>
+    <div></div>
+  </div>
+  <div class="box" id="a6">
+    <h3></h3>
+    <div></div>
+  </div>
+</div>
+</div>
+    <!-- onclick event ser ut så här: @click.prevent="metod" -->
+    <!-- Kopierade "form-control" från linkedin learning, vet inte vad det är till för-->
+  <script>scr="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"</script>
+
+  <script>
+    var attrview = new Vue({
+
+    })
+  </script>
 </body>
 </html>
