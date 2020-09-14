@@ -4,9 +4,90 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>Eating</title>
+  <link rel="Stylesheet" href="../styles.css">
+  <link href='https://fonts.googleapis.com/css?family=Concert One' rel='stylesheet'>
+  <style>
+    body {background-color: rgb(170,67,146);
+        color:white;
+        font-family: 'Concert One';
+        }
+    #flexcontainer{
+      height: 85%;
+      width: 77.3%;
+      float: right;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    div.box {
+        background-color: white;
+        color:black;
+        border-radius: 12px;
+        display: block;
+        padding: 8px;
+        margin: 10px;
+        width: 40vh;
+        height: 40vh;
+        }
+    div#filter{
+    display: inline-block;
+    height: 85%;
+    position: absolute;
+    }
+    p {
+      margin-left: 6px;
+    }
+    a {
+      color:white;
+    }
+  </style>
 </head>
 <body>
+  <noscript>
+    <strong>Aktivera JavaScript!</strong>
+  </noscript>
+  <a href="../index.html">⬅️Go back</a>
+ <div style="margin-left: auto;">
+  <div class="box" id="filter">
+    <h2>Filter Restaurants</h2>
 
+    <input type="adress" v-model="adress" class="form-conrol form-control-lg" style="border-style: solid; border:grey,1px;border-radius: 8px;">
+  </div>
+<div id="flexcontainer">
+  <div class="box" id="r1">
+    <h3>McDonalds</h3>
+    <div>Fast Food - multiple locations</div>
+  </div>
+  <div class="box" id="r2">
+    <h3>Classic Pizza</h3>
+    <div>Fast Casual - Multiple locations</div>
+  </div>
+  <div class="box" id="r3">
+    <h3>Allas Sea Pool</h3>
+    <div>Café & Bar</div>
+  </div>
+  <div class="box" id="r4">
+    <h3>Savoy</h3>
+    <div>Fine Dining - Eteläesplanadi 14, Helsinki</div>
+  </div>
+  <div class="box" id="r5">
+    <h3>Taco Bell</h3>
+    <div>Fast Food - multiple locations</div>
+  </div>
+  <div class="box" id="r6">
+    <h3>Gaijin</h3>
+    <div>Contemporary Casual - Bulevardi 6, Helsinki</div>
+  </div>
+</div>
+</div>
+    <!-- onclick event ser ut så här: @click.prevent="metod" -->
+    <!-- Kopierade "form-control" från linkedin learning, vet inte vad det är till för-->
+  <script>scr="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"</script>
+
+  <script>
+    var foodview = new Vue({
+
+    })
+  </script>
 </body>
 </html>
