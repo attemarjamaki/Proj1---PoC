@@ -7,12 +7,12 @@ body{
 
 .wrapper {
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-columns: 2fr 1fr 2fr 1fr;
     grid-gap: 2em;
-    /*grid-auto-rows: 200px;*/
     grid-auto-rows: minmax(100px, auto);
     justify-items: stretch;
     align-items: stretch;
+    width: 130vw;
 }
 
 .wrapper > div{
@@ -38,13 +38,13 @@ body{
     grid-column: 3;
     grid-row: 1/6;
 }
-
-/* .wrapper > div:nth-child(odd){  this means each odd one will be white for ex.
-    background:white;
-}*/
+.box5{
+    grid-column: 4;
+    grid-row: 1/6;
+}
 
 .back-button {
-    font-size: 35px;
+    font-size: 20px;
     text-decoration: none;
     color: white;
 }
@@ -71,4 +71,7 @@ h2{
 }
 p{
     font-size: 20px;
+}
+p1{
+    font-size: 18px;
 }
