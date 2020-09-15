@@ -8,5 +8,103 @@
 </head>
 <body>
 
+  <style>
+    header {
+        background-color:white;
+        color: white;
+        font-weight: bold;
+        display: flex;          /* Förälder till nav */
+        align-items: center;    /* Centrerar på höjden */      /* Shorthand, uppe & nere samt vänster & höger */
+    }
+    header a {
+        text-decoration: none;  /* Remove underline */
+        color:darkblue;
+    }
+    /* Id i css med # */
+    #logo {
+        /* Fallback för ifall bilder är avstängda, så står de ändå DenApp */
+        font-size: xx-large;    line-height: 1.8em;
+        padding-left: 170px;
+    }
+    
+    
+    nav {
+        margin-left: auto;  /* Skuffar menyn till högra kanten */
+    }
+    nav ul {
+        padding-left: 0px;  /* Bort med inbyggd padding så att mobila menyn blir under logon */
+        margin: 0px 20px;   /* Ta bort inbyggd margin + lite space till höger och vänster */
+    }
+    nav li {
+        list-style: none;   /* Bort med bollar */
+        float: left;        /* Horisontell meny */
+        padding: 10px;      /* Space för hovereffekt */
+        margin: 0px 5px;    /* Space mellan länkar */
+        border-radius: 5px; /* Hovereffekts runda kanter */
+    }
+    nav li:hover {
+        background-color:green; /* Hovereffekt */
+    }
+    
+    
+    
+    html, body {
+      height: 100%;
+      margin: 0;
+    }
+    .grid2x2 {
+      margin-top: -20px;
+      margin-left: 150px;
+      margin-right: 150px;
+      min-height: 95%;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+    }
+    .grid2x2 > div {
+      display: flex; 
+      flex-basis: calc(50% - 40px); 
+      justify-content: center;
+      flex-direction: column;
+    }
+    .grid2x2 > div > div {
+      display: flex;
+      justify-content: center;
+      flex-direction: row;
+    }
+    
+    .box { margin: 20px; }
+    .box1 { 
+      background-color:rgb(74, 74, 197);
+    }
+    .box2 { background-color:green; }
+    .box3 { background-color: purple; }
+    .box4 { background-color:red; }
+    
+    div a{
+      text-decoration: none;
+      color: white;
+      font-size: 50px;
+    }
+    
+    
+    
+    
+    </style>
+    
+    <header> <!-- Logo och meny i headern, logon länkar till splash -->
+      <a href="../"><img id="logo" src="sprak.PNG" height="60px" alt="sprak" /></a>
+    </header>
+    
+    
+    <body>
+    
+      <div class="grid2x2">
+        <div class="box box1"><div><a href="transport/index.html">How do I get around?</a></div></div>
+        <div class="box box2"><div><a href="attractions/index.html">Attractions</a></div></div>
+        <div class="box box3"><div><a href="food/index.html">Where can I eat</a></div></div>
+        <div class="box box4"><div><a href="help/index.html">Need Help!</a></div></div>
+      </div>
+
 </body>
 </html>
